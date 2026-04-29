@@ -1,0 +1,43 @@
+{
+  "MindBridge-50K": {
+    "total_posts": 50000,
+    "collection_range": "January 2023 to March 2025",
+    "languages": {
+      "English": 18500,
+      "Hindi_Devanagari": 11000,
+      "Hinglish": 20500
+    },
+    "platforms": {
+      "Twitter_X": {"raw": 24800, "final": 18200},
+      "Reddit": {"raw": 12400, "final": 10100},
+      "ShareChat": {"raw": 9600, "final": 7300},
+      "Instagram": {"raw": 8200, "final": 6400},
+      "Koo": {"raw": 10500, "final": 8000}
+    },
+    "avg_tokens_per_post": 61.8,
+    "class_distribution": {
+      "Normal": 13485,
+      "Depression": 12727,
+      "Suicidal_Ideation": 8678,
+      "Anxiety": 7521,
+      "Stress": 5589
+    },
+    "splits": {
+      "train": 40000,
+      "validation": 5000,
+      "test": 5000
+    },
+    "test_set_annotation": "100% expert human-annotated, no silver labels"
+  },
+  "DAPT_Corpus": {
+    "total_posts": 3100000,
+    "collection_range": "January 2022 to March 2025",
+    "breakdown": {
+      "English_Reddit": 1200000,
+      "Hinglish_Twitter": 1100000,
+      "Hindi_Koo_ShareChat": 800000
+    },
+    "overlap_with_MindBridge50K": false,
+    "deduplication_method": "URL-level deduplication before pre-training"
+  }
+}
